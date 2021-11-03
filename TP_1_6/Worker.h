@@ -7,9 +7,10 @@ class Worker :
 private:
 	string FIO, status, adress, phone;
 	int salary;
+	bool isDriver;
 public:
 	Worker();
-	Worker(string FIO, string status, string adress, string phone, int salary);
+	Worker(string FIO, string status, string adress, string phone, int salary, bool isDriver);
 	Worker(const Worker& worker);
 	~Worker() { cout << "Вызван деструктор Worker" << endl; }
 
@@ -31,7 +32,10 @@ public:
 	string getPhone() { return phone; }
 	void setPhone(string phone) { this->phone = phone; }
 
-	int geSalary() { return salary; }
+	int getSalary() { return salary; }
 	void setSalary(int salary) { this->salary = salary; }
+
+	int geIsDriver() { return isDriver; }
+	void setIsDriver(int isDriver) { this->isDriver = isDriver; }
 };
 
