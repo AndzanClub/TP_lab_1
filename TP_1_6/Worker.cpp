@@ -1,6 +1,6 @@
 #include "Worker.h"
 
-Worker::Worker() : Base("Работник"), FIO("Не задано"), status("Не задано"), adress("Не задано"), adress("Не задано"), salary(0)
+Worker::Worker() : Base("Работник"), FIO("Не задано"), status("Не задано"), adress("Не задано"), phone("Не задано"), salary(0)
 {
 	cout << "Вызван конструктор Worker" << endl;
 }
